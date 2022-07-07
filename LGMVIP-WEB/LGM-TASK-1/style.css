@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: rgba(253, 253, 253, 0.979);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 25%;
+    background: rgb(255, 218, 218);
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: right;
+    box-shadow: 7px 7px 7px rgba(161, 161, 161, 0.25);
+}
+
+.display{
+    width: 100%;
+    height: 20vh;
+    /* border: 5px solid red; */
+    background: rgb(255, 218, 218);
+    color: rgb(0, 0, 0);
+}
+
+.input{
+    width:100%;
+    padding: 10px;
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border: 2px solid yellow; */
+}
+
+
+button{
+ border: none; 
+ border-radius: 100px;
+background-color: rgb(255, 255, 255);
+padding: 1.6rem;
+font-size: 22px;
+transition: all 0.25s ease-in-out;
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+.output{
+    font-size: 28px;
+    padding: 25px;
+}
+
+.result{
+    font-size: 18px;
+    padding: 25px;
+}
+
+@keyframes big{
+    0%{
+        font-size: 18px;
+    }
+    100%{
+        font-size: 30px;
+    }
+}
+
+@keyframes small{
+  0%{
+      font-size: 28px;
+  }
+  100%{
+      font-size: 18px;
+  }
+}
